@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block content %}
+<div class="container">
+  <h2>Estas seguro de que quieres eliminar este usuario</h2>
+  <form method="POST">
+    {% csrf_token %}
+    <button class='btn btn-primary' type="submit">Eliminar</button>
+</div>
+{% endblock content %}
